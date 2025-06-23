@@ -1,12 +1,67 @@
-# React + Vite
+# 🍽️ Food Ordering App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive **Food Ordering Web App** built with **React** and **Redux**.  
+Users can browse a variety of dishes, add them to a cart, and view the total cost in real-time — all handled using centralized Redux state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📋 Dynamic food menu with images, titles, and prices
+- 🛒 Add/remove items from the cart
+- 🔁 Real-time cart updates with quantity and subtotal
+- 🧠 Redux for global state management (cart logic)
+- 💡 Clean, modern UI
+- 📱 Fully responsive layout
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Component-based UI
+- **Redux** – Centralized cart state
+- **React-Redux** – Integration layer
+- **JavaScript (ES6+)**
+- **CSS Modules / Plain CSS** – Styling
+
+---
+
+## 🧠 State Management with Redux
+
+This app uses Redux for:
+
+- ✅ Managing the cart state (items, quantity, total)
+- ✅ Dispatching actions to add or remove items
+- ✅ Using selectors to retrieve cart data in components
+
+File structure includes:
+Food-Ordering-App/
+├── public/
+├── src/
+│ ├── Components/
+│ │ ├── Header/
+│ │ ├── Menu/
+│ │ ├── Cart/
+│ ├── redux/
+│ │ ├── store.js
+│ │ └── cartSlice.js
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── ...
+├── package.json
+└── index.html
+
+
+## To run the app locally:
+
+# Clone the repository
+git clone https://github.com/RohanShelke17/Food-Ordering-App.git
+
+# Navigate into the project folder
+cd Food-Ordering-App
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
